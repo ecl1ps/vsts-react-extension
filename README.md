@@ -42,3 +42,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Local VSTS extension development
+
+Configure extension to load sources from remote url using `baseUri` in `vss-extension.json` with url of your local development server, default https://localhost:3000/.
+
+Configure your local development server to serve resources using https. 
+
+Extension must be built using `npm run build`, packaged `npm run package`, published to https://marketplace.visualstudio.com/manage/publishers/ a installed to VSTS app. Next development can happen on local development app with support of HMR.
+
+https://stackoverflow.com/questions/39201829/how-to-debug-vsts-extension-build-summary-tab-without-deploying-to-vsts-service
