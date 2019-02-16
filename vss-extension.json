@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "mw-dashboard",
+    "publisher": "JanNovotny",
+    "version": "0.0.5",
+    "name": "MultiWeb Dashboard",
+    "description": "A Visual Studio Services extension for MultiWeb's purposes",
+    "public": false,
+    "baseUri": "https://localhost:3000",
+    "categories": ["Azure Repos"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "files": [
+        {
+            "path": "build",
+            "addressable": true, 
+            "packagePath": "/"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "mw-pr",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-code-web.code-hub-group"
+            ],
+            "properties": {
+                "name": "MW PRs",
+                "uri": "index.html"
+            }
+        }
+    ]
+}
