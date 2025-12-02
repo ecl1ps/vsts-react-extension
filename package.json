@@ -7,7 +7,7 @@
     "rimraf": "^2.6.3",
     "script-loader": "^0.7.2",
     "terser": "^3.14.1",
-    "tfx-cli": "^0.6.4"
+    "tfx-cli": "^0.22.2"
   },
   "dependencies": {
     "@types/jest": "23.3.13",
